@@ -42,15 +42,12 @@ val: dataset/val/images
 nc: 1
 names: ["Cracks"]
 
-# Training
-To train the YOLOv8 model:
+## Training
+# To train the YOLOv8 model, run:
+yolo train data=data.yaml model=yolov8n.pt epochs=150 imgsz=256
 
-yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=150 imgsz=256
-Image size: 256x256
-Augmentations: Enabled (flipping, brightness)
-Epochs: 150
 
-# Results
+## Results
 First trial: 640x640, no augmentations, 50 epochs → Poor results
 Second trial: 256x256, with augmentations, 100 epochs → Improved
 Third trial: 256x256, with augmentations, 150 epochs → Best performance
