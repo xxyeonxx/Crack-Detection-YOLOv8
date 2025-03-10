@@ -25,10 +25,11 @@ The goal is to improve the safety and efficiency of infrastructure inspection by
 
 
 
-# To set up the environment:
-git clone https://github.com/xxyeonxx/Crack-Detection-YOLOv8.git
-cd Crack-Detection-YOLOv8
-pip install -r requirements.txt  # If applicable
+## To set up the environment:
+# Clone the repository:
+```git clone https://github.com/xxyeonxx/Crack-Detection-YOLOv8.git```
+# Install dependencies:
+```pip install -r requirements.txt  # If applicable```
 
 
 ## Dataset
