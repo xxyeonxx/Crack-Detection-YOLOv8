@@ -9,19 +9,20 @@ Jackal UGV with an Intel RealSense Camera for autonomous movement and data colle
 ROS (Robot Operating System) for robot control.
 The goal is to improve the safety and efficiency of infrastructure inspection by enabling autonomous crack detection and monitoring.
 
-# Project Structure
-📂 Crack-Detection-YOLOv8
-│── 📂 dataset/                 # Dataset (images and labels)
-│── 📂 models/                  # Trained YOLOv8 models
-│── 📂 outputs/                 # Inference results
-│── 📂 runs/                     # YOLO training logs
-│── 📂 scripts/                  # Supporting scripts
-│── data.yaml                    # YOLO dataset configuration
-│── jackal_flowchart.py          # Experiment visualization
-│── prepare_dataset.py           # Dataset preprocessing
-│── preprocess_images.py         # Image preprocessing script
-│── yolov8n.pt                    # YOLOv8 pre-trained model
-│── README.md                     # Project documentation
+## Project Structure
+- **Crack-Detection-YOLOv8/**
+  - `dataset/` - Contains images and labels
+  - `models/` - Trained YOLOv8 models
+  - `outputs/` - Inference results
+  - `runs/` - YOLO training logs
+  - `scripts/` - Supporting scripts
+  - `data.yaml` - YOLO dataset configuration
+  - `jackal_flowchart.py` - Experiment visualization
+  - `prepare_dataset.py` - Dataset preprocessing
+  - `preprocess_images.py` - Image preprocessing script
+  - `yolov8n.pt` - YOLOv8 pre-trained model
+  - `README.md` - Project documentation
+
 
 
 # To set up the environment:
@@ -30,20 +31,12 @@ cd Crack-Detection-YOLOv8
 pip install -r requirements.txt  # If applicable
 
 
-# Dataset
-The dataset includes 500 images: cracked vs. uncracked concrete surfaces.
-Labeled using Roboflow.
-Dataset structure follows the YOLO format:
+## Dataset
+The dataset consists of 500 images, including cracked and uncracked surfaces. Images were labeled using Roboflow.
 
-dataset/
-├── train/
-│   ├── images/
-│   ├── labels/
-├── val/
-│   ├── images/
-│   ├── labels/
-
-YAML configuration (data.yaml):
+- **Dataset Structure** (YOLO format):
+- **Labels:** YOLO format (`data.yaml`):
+```yaml
 train: dataset/train/images
 val: dataset/val/images
 nc: 1
