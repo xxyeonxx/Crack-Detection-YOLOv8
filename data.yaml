@@ -1,0 +1,4 @@
+train: /home/nuclear/crack_detection/dataset/train
+val: /home/nuclear/crack_detection/dataset/val
+nc: 2
+names: ["uncracked", "cracked"]
