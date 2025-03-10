@@ -45,7 +45,7 @@ names: ["Cracks"]
 
 ## Training
 # To train the YOLOv8 model, run:
-yolo train data=data.yaml model=yolov8n.pt epochs=150 imgsz=256
+```yolo train data=data.yaml model=yolov8n.pt epochs=150 imgsz=256```
 
 
 ## Results
