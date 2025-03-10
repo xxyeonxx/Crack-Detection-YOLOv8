@@ -49,6 +49,7 @@ yolo train data=data.yaml model=yolov8n.pt epochs=150 imgsz=256
 
 
 ## Results
-First trial: 640x640, no augmentations, 50 epochs → Poor results
-Second trial: 256x256, with augmentations, 100 epochs → Improved
-Third trial: 256x256, with augmentations, 150 epochs → Best performance
+- **First trial**: `640x640`, `50 epochs` → Poor results
+- **Second trial**: `256x256`, `100 epochs` → Improved
+- **Third trial**: `256x256`, `150 epochs` → Best performance
+
