@@ -36,6 +36,7 @@ The goal is to improve the safety and efficiency of infrastructure inspection by
 The dataset consists of 500 images, including cracked and uncracked surfaces. Images were labeled using Roboflow.
 
 - **Dataset Structure** (YOLO format):
+```dataset/ ├── train/ │ ├── images/ │ ├── labels/ ├── val/ │ ├── images/ │ ├── labels/```
 - **Labels**: YOLO format (`data.yaml`):
 ```yaml
 train: dataset/train/images
