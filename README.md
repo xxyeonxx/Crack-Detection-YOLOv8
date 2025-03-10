@@ -35,12 +35,13 @@ pip install -r requirements.txt  # If applicable
 The dataset consists of 500 images, including cracked and uncracked surfaces. Images were labeled using Roboflow.
 
 - **Dataset Structure** (YOLO format):
-- **Labels:** YOLO format (`data.yaml`):
+- **Labels**: YOLO format (`data.yaml`):
 ```yaml
 train: dataset/train/images
 val: dataset/val/images
 nc: 1
 names: ["Cracks"]
+```
 
 ## Training
 # To train the YOLOv8 model, run:
