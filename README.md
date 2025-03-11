@@ -58,6 +58,9 @@ val: dataset/val/images
 nc: 1
 names: ["Cracks"]
 ```
+## Annotations
+Manual annotation with Roboflow, labeling cracks with bounding boxes.
+(Class : Crack)
 
 ## Training
 # To train the YOLOv8 model, run:
