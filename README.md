@@ -86,7 +86,7 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
 This script captured real-time video from the camera and ran YOLOv8 inference on each frame.
 
 3. Monitor your model
-![screenshot](crack_detection_screenshot.png)
+![screenshot] (crack_detection_screenshot.png)
 
 4. Refine your results
 
