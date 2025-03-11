@@ -6,6 +6,7 @@ This project focuses on developing a crack detection system for concrete structu
 
 YOLOv8 for real-time crack detection.
 Jackal UGV with an Intel RealSense Camera for autonomous movement and data collection.
+![Jackal](images/jackal.png)
 ROS (Robot Operating System) for robot control.
 The goal is to improve the safety and efficiency of infrastructure inspection by enabling autonomous crack detection and monitoring.
 
