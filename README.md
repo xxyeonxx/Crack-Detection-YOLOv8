@@ -73,3 +73,11 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
 - **Second trial**: `256x256`, `100 epochs` → Improved
 - **Third trial**: `256x256`, `150 epochs` → Best performance
 
+## Experiments
+1. Run the Jackal Robot
+   - You need to launch the Jackal's ROS environment and pair the joystick to control it.
+     ```
+     roslaunch jackal_control teleop.launch
+     ```
+2. Run the Crack Detection Model
+3. 
