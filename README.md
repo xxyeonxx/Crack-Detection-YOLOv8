@@ -80,4 +80,13 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
      roslaunch jackal_control teleop.launch
      ```
 2. Run the Crack Detection Model
-3. 
+   ```
+   python3 crack_detection.py
+  ```
+This script captured real-time video from the camera and ran YOLOv8 inference on each frame.
+
+3. Monitor your model
+![crack_detection_screenshot](crack_detection_screenshot.png)
+
+4. Refine your results
+
