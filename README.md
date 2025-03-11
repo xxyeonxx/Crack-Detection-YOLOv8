@@ -9,7 +9,7 @@ The system utilizes:
 # YOLOv8 for real-time crack detection.
 # Jackal UGV 
 with an Intel RealSense Camera for autonomous movement and data collection.
-![Jackal] (https://github.com/xxyeonxx/Crack-Detection-YOLOv8/blob/main/jackal.png?raw=true)
+![Jackal] (jackal.png)
 
 # ROS (Robot Operating System) for robot control.
 
@@ -61,6 +61,7 @@ names: ["Cracks"]
 ## Annotations
 Manual annotation with Roboflow, labeling cracks with bounding boxes.
 (Class : Crack)
+![Annotaions](labeling_roboflow.png)
 
 ## Training
 # To train the YOLOv8 model, run:
