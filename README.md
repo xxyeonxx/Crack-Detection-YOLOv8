@@ -59,6 +59,14 @@
 ## Dataset
 The dataset consists of 500 images, including cracked and uncracked surfaces. Images were labeled using Roboflow.
 
+
+- **Dataset Source**
+  - Dorafshan, S., Thomas, R. J., & Maguire, M. (2018). SDNET2018: A Concrete Crack Image Dataset for Machine Learning Applications.
+    ```
+    https://digitalcommons.usu.edu/all_datasets/48/
+    ```
+    
+
 - **Dataset Structure** (YOLO format):
 ```
 dataset/
