@@ -211,6 +211,10 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
        - Should additional features like crack size estimation or severity ranking be added?
 
 
+## Conclusion
+  - This project demonstrated how robotic automation can enhance safety and efficiency in infrastructure inspections, reducing the need for direct human exposure to hazardous environments. As advancements in AI, robotics, and computer vision continue, the integration of autonomous systems like this will play a crucial role in ensuring the safety and longevity of critical structures like nuclear power plants.
+  - With further improvements, this technology could contribute significantly to the field of structural health monitoring, industrial safety, and human-robot collaboration.
+
 
 
 
