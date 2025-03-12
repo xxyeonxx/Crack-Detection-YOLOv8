@@ -1,17 +1,32 @@
 ## Crack Detection with YOLOv8
-- A project for detecting cracks in concrete structures using YOLOv8, implemented with a RealSense camera on a Jackal robot.
+- A project for **detecting cracks in concrete structures** using YOLOv8, implemented with a RealSense camera on a Jackal robot.
 
 ## Introduction
-- This project focuses on developing a crack detection system for concrete structures, particularly for nuclear power plants where safety is critical. 
-The goal is to improve the safety and efficiency of infrastructure inspection by enabling autonomous crack detection and monitoring.
+- Ensuring the structural health of concrete infrastructures is crucial, especially in **nuclear power plants**, where cracks can lead to catastrophic failures. Traditionally, human inspectors conduct periodic visual assessments, which are time-consuming and risky.
+- This project focuses on automating crack detection using an autonomous robotic system, leveraging state-of-the-art deep learning models.
+- By integrating **YOLOv8 for real-time crack detection** with the **Jackal and Intel RealSense Camera**, we enable remote, efficient, and continuous monitoring of infrastructure. The **Robot Operating System (ROS)** facilitates robot control and real-time data collection, allowing seamless deployment in hazardous environments.
+- The goal is to **improve the safety and efficiency of infrastructure inspection** by enabling autonomous crack detection and monitoring.
+
 
 - The system utilizes:
-  - YOLOv8 for real-time crack detection.
-  - Jackal UGV 
+  - **YOLOv8** for real-time crack detection.
+  - **Jackal UGV** 
     with an Intel RealSense Camera for autonomous movement and data collection.
     ![Jackal](jackal.png)
-  - ROS (Robot Operating System) for robot control.
+  - **ROS (Robot Operating System)** for robot control.
 
+## Benefits
+- This project also explores **Human-Robot Interaction (HRI)** by examining how robotic-assisted inspections can complement and **improve human's safety.**
+- The key benefits include:
+
+  🔍 Enhanced Inspection Capabilities:
+    The robot autonomously navigates through structures and detects cracks in real-time, providing live feedback to human operators.
+
+  🛠 Operator-Assisted Control:
+    Instead of fully replacing human inspectors, the robot serves as an intelligent assistant, helping experts focus on analyzing critical defects rather than performing repetitive manual     inspections.
+
+  🚧 Increased Safety & Reduced Exposure:
+    In high-risk environments, such as nuclear power plants, oil refineries, or bridges, sending a robot for preliminary inspections minimizes human exposure to radioactive or structurally compromised areas.
 
 ## Project Structure
 - **Crack-Detection-YOLOv8/**
@@ -30,10 +45,15 @@ The goal is to improve the safety and efficiency of infrastructure inspection by
 
 
 ## To set up the environment:
-# Clone the repository:
-```git clone https://github.com/xxyeonxx/Crack-Detection-YOLOv8.git```
-# Install dependencies:
-```pip install -r requirements.txt  # If applicable```
+- Clone the repository:
+  ```
+  git clone https://github.com/xxyeonxx/Crack-Detection-YOLOv8.git
+  cd Crack-Detection-YOLOv8
+  ```
+- Install dependencies:
+  ```
+  pip install -r requirements.txt  # If applicable
+  ```
 
 
 ## Dataset
@@ -84,19 +104,26 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
 
 ## Experiments
 1. Run the Jackal Robot
-   - You need to launch the Jackal's ROS environment and pair the joystick to control it.
+  - To operate Jackal and manually control it via a joystick:
      ```
      roslaunch jackal_control teleop.launch
      ```
 2. Run the Crack Detection Model
-   ```
-   python3 crack_detection.py
-   ```
-This script captured real-time video from the camera and ran YOLOv8 inference on each frame.
+  - To start real-time crack detection on Jackal, run:
+   
+     ```
+     python3 crack_detection.py
+     ```
+  - This script:
+      - Captures real-time video from the Intel RealSense Camera.
+      - Runs YOLOv8 inference on each frame.
+      - Displays detected cracks with bounding boxes.
 
-3. Monitor your model
-![Monitor](crack_detection_screenshot.png)
+
+3. Monitor your model's performance
+  - Example of crack detection output:
+    ![Monitor](crack_detection_screenshot.png)
 
 
-4. Refine your results
+5. Refine your results
 
