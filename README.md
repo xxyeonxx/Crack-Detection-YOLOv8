@@ -73,6 +73,21 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
 - **Second trial**: `256x256`, `100 epochs` → Improved
 - **Third trial**: `256x256`, `150 epochs` → Best performance
 
+- **Key metrics**:
+
+| Trial  | Image Size | Epochs | Precision | Recall | mAP@50 | mAP@50-95 |
+|--------|-----------|--------|-----------|--------|--------|-----------|
+| First  | 640x640   |  50    |  0.65     |  0.52  |  0.55  |  0.30     |
+| Second | 256x256   | 100    |  0.71     |  0.58  |  0.68  |  0.48     |
+| Third  | 256x256   | 150    |  0.81     |  0.65  |  0.73  |  0.52     |
+
+- **Precision**: Measures how many of the detected cracks are actually cracks.
+- **Recall**: Measures how many actual cracks were detected.
+- **mAP@50**: Mean Average Precision at IoU 0.5 (general accuracy).
+- **mAP@50-95**: Mean Average Precision across different IoU thresholds (stricter accuracy).
+
+📌 *The third trial performed the best with higher precision and recall!* 🚀
+
 ## Experiments
 1. Run the Jackal Robot
    - You need to launch the Jackal's ROS environment and pair the joystick to control it.
