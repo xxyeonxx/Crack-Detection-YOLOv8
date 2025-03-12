@@ -57,8 +57,14 @@
 
 
 ## Dataset
-The dataset consists of 500 images, including cracked and uncracked surfaces. Images were labeled using Roboflow.
-
+- The dataset consists of 500 images, including cracked and uncracked surfaces. Images were labeled using Roboflow.
+  - Example of Cracked image :
+    
+    ![Cracks](example_crack.png)
+    
+  - Example of Un-cracked image :
+    
+    ![NoCracks](example_nocrack.png)
 
 - **Dataset Source**
   - Dorafshan, S., Thomas, R. J., & Maguire, M. (2018). SDNET2018: A Concrete Crack Image Dataset for Machine Learning Applications.
@@ -91,10 +97,25 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
 ![Annotaions](labeling_roboflow.png)
 
 ## Training
-# To train the YOLOv8 model, run:
-```yolo train data=data.yaml model=yolov8n.pt epochs=150 imgsz=256```
+-  To train the YOLOv8 model, run:
+  
+  ```
+  yolo train data=data.yaml model=yolov8n.pt epochs=150 imgsz=256
+  ```
 
-
+-  Parameters
+  
+    - **Epochs**: The number of training iterations.
+        - A higher number generally improves accuracy, but too many can lead to overfitting.
+        - Try epochs=50 for a quick test.
+        - Use epochs=100 for balanced training.
+        - **epochs=150** was chosen for the best performance in this project.
+    
+    - **Image Size (imgsz)**
+    : A smaller image size (e.g., imgsz=256) speeds up training and inference while still capturing enough details for crack detection.
+      The original dataset contained **256x256** images, so resizing larger (e.g., 640x640) caused distortions and poor performance in early trials.
+      Using 256x256 improved accuracy while maintaining efficiency.
+    
 ## Results
 
 | Trial  | Image Size | Epochs | Precision | Recall | mAP@50 | mAP@50-95 |
@@ -111,6 +132,9 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
 📌 *The third trial performed the best with higher precision and recall!* 🚀
 
 ## Experiments
+: This experiment was designed to evaluate the real-time crack detection capabilities of YOLOv8 when implemented on a Jackal UGV (Unmanned Ground Vehicle) with an Intel RealSense camera.
+
+  # Set-up the 
 1. Run the Jackal Robot
   - To operate Jackal and manually control it via a joystick:
      ```
