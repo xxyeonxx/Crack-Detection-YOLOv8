@@ -69,11 +69,6 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
 
 
 ## Results
-- **First trial**: `640x640`, `50 epochs` → Poor results
-- **Second trial**: `256x256`, `100 epochs` → Improved
-- **Third trial**: `256x256`, `150 epochs` → Best performance
-
-- **Key metrics**:
 
 | Trial  | Image Size | Epochs | Precision | Recall | mAP@50 | mAP@50-95 |
 |--------|-----------|--------|-----------|--------|--------|-----------|
