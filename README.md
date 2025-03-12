@@ -145,18 +145,27 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
   - To improve model performance and reduce false detections:
 
     - Collected additional real-world images of cracked and uncracked surfaces.
+       ![Bricks](bricks.png)
     - Captured images of the model bricks in the lab environment.
     - Uploaded and annotated them in Roboflow to integrate them into the existing dataset.
     - Re-trained the model after dataset expansion.
+    - 
+**3. Preparing the Jackal Robot**
+  - Joystick Setup:
+    The Jackal robot was controlled via a joystick, launch the teleoperation script using:
+    ```
+    roslaunch jackal_control teleop.launch
+    ```
+  - Camera Activation:
+    The Intel RealSense camera provided real-time RGB video feed for YOLO inference.
 
+**4. Involving Participants**
+  - To assess the usability of the system, I included human interaction in two roles:
 
-    
-1. Run the Jackal Robot
-  - To operate Jackal and manually control it via a joystick:
-     ```
-     roslaunch jackal_control teleop.launch
-     ```
-2. Run the Crack Detection Model
+    - Operator: Controlling Jackal via the joystick, navigating the robot to inspect surfaces.
+    - Observer/Monitor: Analyzing the detection results displayed on the screen in real time.
+      
+**5. Running the Crack Detection Model**
   - To start real-time crack detection on Jackal, run:
    
      ```
@@ -167,11 +176,42 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
       - Runs YOLOv8 inference on each frame.
       - Displays detected cracks with bounding boxes.
 
-
-3. Monitor your model's performance
+**6. Evaluating Performance**
   - Example of crack detection output:
     ![Monitor](crack_detection_screenshot.png)
+    
+  - To assess the effectiveness of the trained YOLOv8 model for real-time crack detection, we defined several evaluation criteria and designed a participant survey to gather qualitative feedback.
+
+    **(1) Crack Detection Accuracy**
+      - Can the model correctly identify cracks on the model bricks?
+      - Does it successfully distinguish between cracked and uncracked surfaces?
+      - Does it mistakenly detect non-crack elements (e.g., hands, shadows, textures) as cracks?
+
+    **(2) Detection Confidence and Consistency**
+      - Does the confidence score (e.g., 0.55 threshold) correlate with actual crack presence?
+      - How well does the model perform under different lighting conditions?
+      - Does the detection vary based on the distance or angle of the RealSense camera?
+        
+    **(3) Real-time Processing & Computational Efficiency**
+      - Can the model run smoothly on the Jackal's onboard processing unit?
+      - Does increasing the confidence threshold improve accuracy without sacrificing detection speed?
+   
+**7. Participants' Feedback**
+  - To evaluate the **human-robot interaction aspect**, you can design a set of questions for participants who controlled the Jackal and monitored the detection output.
+    
+    **(1) Ease of Control & Navigation (Operator)**
+       - Did you feel the robot responded accurately to your inputs?
+       - Were there any difficulties in positioning the robot to inspect cracks?
+       - Would you suggest an alternative control method?
+    
+    **(2) Visibility & Detection Feedback (Monitor/Observer)**
+       - Was the real-time detection display clear and informative?
+       - Was it easy to interpret the model’s confidence scores (e.g., high/low detection thresholds)?
+       - Did the system provide sufficient information for decision-making?
+       - Should additional features like crack size estimation or severity ranking be added?
 
 
-5. Refine your results
+
+
+
 
