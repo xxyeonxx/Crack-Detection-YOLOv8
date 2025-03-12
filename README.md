@@ -134,7 +134,23 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
 ## Experiments
 : This experiment was designed to evaluate the real-time crack detection capabilities of YOLOv8 when implemented on a Jackal UGV (Unmanned Ground Vehicle) with an Intel RealSense camera.
 
-  # Set-up the 
+**1. Set-up the Environment**
+  - To create a controlled test area for evaluating the crack detection model, I designed an experimental setup that mimics a real-world inspection scenario.
+  - This includes:
+    - Model Concrete Bricks: Placed within the test environment, some with visible cracks and others without.
+    - Printed Crack Images: Since the dataset was limited, I attached printed images of cracks to barriers to simulate various crack types and test model accuracy.
+      ![Setup](setup.jpg)
+
+**2. Expanding the Dataset**
+  - To improve model performance and reduce false detections:
+
+    - Collected additional real-world images of cracked and uncracked surfaces.
+    - Captured images of the model bricks in the lab environment.
+    - Uploaded and annotated them in Roboflow to integrate them into the existing dataset.
+    - Re-trained the model after dataset expansion.
+
+
+    
 1. Run the Jackal Robot
   - To operate Jackal and manually control it via a joystick:
      ```
