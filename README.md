@@ -1,17 +1,16 @@
-# Crack Detection with YOLOv8
-## A project for detecting cracks in concrete structures using YOLOv8, implemented with a RealSense camera on a Jackal robot.
+## Crack Detection with YOLOv8
+- A project for detecting cracks in concrete structures using YOLOv8, implemented with a RealSense camera on a Jackal robot.
 
 ## Introduction
-This project focuses on developing a crack detection system for concrete structures, particularly for nuclear power plants where safety is critical. 
+- This project focuses on developing a crack detection system for concrete structures, particularly for nuclear power plants where safety is critical. 
 The goal is to improve the safety and efficiency of infrastructure inspection by enabling autonomous crack detection and monitoring.
-The system utilizes:
 
-# YOLOv8 for real-time crack detection.
-# Jackal UGV 
-with an Intel RealSense Camera for autonomous movement and data collection.
-![Jackal](jackal.png)
-
-# ROS (Robot Operating System) for robot control.
+- The system utilizes:
+  - YOLOv8 for real-time crack detection.
+  - Jackal UGV 
+    with an Intel RealSense Camera for autonomous movement and data collection.
+    ![Jackal](jackal.png)
+  - ROS (Robot Operating System) for robot control.
 
 
 ## Project Structure
