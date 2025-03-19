@@ -19,13 +19,13 @@
 - This project also explores **Human-Robot Interaction (HRI)** by examining how robotic-assisted inspections can complement and **improve human's safety.**
 - The key benefits include:
 
-  🔍 Enhanced Inspection Capabilities:
+  - Enhanced Inspection Capabilities:
     The robot autonomously navigates through structures and detects cracks in real-time, providing live feedback to human operators.
 
-  🛠 Operator-Assisted Control:
+  - Operator-Assisted Control:
     Instead of fully replacing human inspectors, the robot serves as an intelligent assistant, helping experts focus on analyzing critical defects rather than performing repetitive manual     inspections.
 
-  🚧 Increased Safety & Reduced Exposure:
+  - Increased Safety & Reduced Exposure:
     In high-risk environments, such as nuclear power plants, oil refineries, or bridges, sending a robot for preliminary inspections minimizes human exposure to radioactive or structurally compromised areas.
 
 ## Project Structure
@@ -129,7 +129,7 @@ Manual annotation with Roboflow, labeling cracks with bounding boxes.
 - **mAP@50**: Mean Average Precision at IoU 0.5 (general accuracy).
 - **mAP@50-95**: Mean Average Precision across different IoU thresholds (stricter accuracy).
 
-📌 *The third trial performed the best with higher precision and recall!* 🚀
+ *The third trial performed the best with higher precision and recall!* 
 
 ## Experiments
 : This experiment was designed to evaluate the real-time crack detection capabilities of YOLOv8 when implemented on a Jackal UGV (Unmanned Ground Vehicle) with an Intel RealSense camera.
